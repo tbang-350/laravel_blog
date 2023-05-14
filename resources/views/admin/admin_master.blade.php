@@ -55,7 +55,7 @@
         <div class="main-content">
 
             @yield('admin')
-            
+
             <!-- End Page-content -->
 
             @include('admin.body.footer')
@@ -66,7 +66,7 @@
     </div>
     <!-- END layout-wrapper -->
 
-    
+
 
     <!-- JAVASCRIPT -->
     <script src="{{ asset('backend/assets/libs/jquery/jquery.min.js') }}"></script>
@@ -98,6 +98,12 @@
 
     <!-- App js -->
     <script src="{{ asset('backend/assets/js/app.js') }}"></script>
+
+    <!-- Form Validation -->
+    <script src="{{asset('backend/assets/libs/parsleyjs/parsley.min.js')}}"></script>
+
+    <script src="{{asset('backend/assets/js/pages/form-validation.init.js')}}"></script>
+
 </body>
 
 </html>
