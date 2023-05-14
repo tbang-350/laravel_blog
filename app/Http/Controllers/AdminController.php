@@ -18,7 +18,12 @@ class AdminController extends Controller
 
         $request->session()->regenerateToken();
 
-        return redirect('/login');
+        $notification = array(
+            'message' => 'User Logout Successfully',
+            'alert-type' => 'success'
+        );
+
+        return redirect('/login')->with($notification);
     } // End Method
 
 
@@ -64,7 +69,12 @@ class AdminController extends Controller
 
         $data->save();
 
-        return redirect()->route('admin.profile');
+        $notification = array(
+            'message' => 'Profile Updated Succesfully',
+            'alert-type' => 'info'
+        );
+
+        return redirect()->route('admin.profile')->with($notification);
 
 
     } // End Method
