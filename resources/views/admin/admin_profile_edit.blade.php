@@ -4,6 +4,7 @@
 
 
     <div class="page-content">
+
         <div class="container-fluid">
 
             <div class="row">
@@ -12,6 +13,8 @@
                         <div class="card-body">
 
                             <h4 class="card-title">Edit Profile Page</h4>
+
+                            <br>
 
                             <form action="{{ route('store.profile') }}" class="needs-validation" method="post"
                                 enctype="multipart/form-data">
@@ -76,10 +79,9 @@
                     </div>
                 </div> <!-- end col -->
 
-            </div>
+            </div><!-- end row -->
+
         </div>
-
-
 
         <script type="text/javascript">
             $(document).ready(function() {
@@ -92,4 +94,7 @@
                 });
             });
         </script>
-    @endsection
+
+    </div>
+
+@endsection

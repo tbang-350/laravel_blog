@@ -42,6 +42,18 @@
                     <h4 class="text-muted text-center font-size-18"><b>Register</b></h4>
 
                     <div class="p-3">
+
+                        @if ($errors->any())
+                            <div class="validation-errors mb-4">
+                                @foreach ($errors->all() as $error)
+                                    {{-- <p>{{ $error }}</p> --}}
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        {{ $error }}
+                                    </div>
+                                @endforeach
+                            </div>
+                        @endif
+
                         <form class="form-horizontal mt-3" method="POST" action="{{ route('register') }}">
                             @csrf
 
