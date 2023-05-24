@@ -107,6 +107,12 @@
 
     <script src="{{ asset('backend/assets/js/pages/form-validation.init.js') }}"></script>
 
+    <!--tinymce js-->
+    <script src="{{ asset('backend/assets/libs/tinymce/tinymce.min.js') }}"></script>
+
+    <!-- init js -->
+    <script src="{{ asset('backend/assets/js/pages/form-editor.init.js') }}"></script>
+
     <!-- Toastr notification -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
